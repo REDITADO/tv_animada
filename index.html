@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV-Alegria</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        img{
+            width:11rem;
+            height: 8rem;
+        }
+        #header{
+            padding-left: 2rem;
+            display: flex;
+        }
+        #header img{
+            padding-left: 5rem;
+            width: 12rem;
+        }
+        #screen {
+            display: flex;
+            align-self: center;
+            justify-content:center;
+            /* background: url(logo_full.png) no-repeat center ; */
+            z-index: 999999;
+            padding-top: 6rem;
+            padding-left:12rem;
+        }
+        #screen #tv{
+            width: 30rem;
+            height: 30rem;
+            position: relative;
+        }
+        iframe{
+            width: 22rem;
+
+            height: 15rem;
+            border-radius: 50px;
+            position: relative;
+            top: 11.5rem;
+            right:25.5rem;
+        }
+        body{
+            background-color: orange;
+        }
+        #joca{
+            width: 60rem;
+            height: 60rem;
+            display: inline ;
+            z-index: 0;
+        }
+        @media screen and (max-width:1000px) {
+        iframe{
+            /* width: 40rem; */
+            /* left: 2rem; */
+            position: absolute;
+            left: 4rem;
+            display: inline;
+        }
+        
+        #screen{
+            /* display: inline; */
+            align-self: auto;
+            justify-content: initial;
+            width: 40rem;
+            position: absolute;
+            left: 6rem;
+            top: 16rem;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="./full_tvalegria.png"/>
+        <img src="./logo_full.png"/>
+    </div>
+    <div id="screen">
+        <img src="logo_full.png " alt="" id="tv">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AHsF2h5dOo4?si=IfLN2HUQuR88qJjD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>
+    </div>
+
+</body>
+</html>
